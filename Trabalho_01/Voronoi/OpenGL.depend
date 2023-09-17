@@ -85,15 +85,15 @@
 1584988348 source:d:\pinho\poligonos\temporizador.cpp
 	"Temporizador.h"
 
-1694728279 source:c:\users\f.freitas007\downloads\voronoi\voronoi\diagramavoronoi.cpp
+1692904432 source:c:\users\10033421\desktop\voronoi\diagramavoronoi.cpp
 	"DiagramaVoronoi.h"
 
-1694726069 c:\users\f.freitas007\downloads\voronoi\voronoi\diagramavoronoi.h
+1692904432 c:\users\10033421\desktop\voronoi\diagramavoronoi.h
 	<iostream>
 	<fstream>
 	"Poligono.h"
 
-1694724984 c:\users\f.freitas007\downloads\voronoi\voronoi\poligono.h
+1692904432 c:\users\10033421\desktop\voronoi\poligono.h
 	<iostream>
 	<windows.h>
 	<glut.h>
@@ -102,25 +102,150 @@
 	"Ponto.h"
 	<vector>
 
-1694724984 c:\users\f.freitas007\downloads\voronoi\voronoi\gl\glut.h
+1692904433 c:\users\10033421\desktop\voronoi\gl\glut.h
 	"freeglut.h"
 
-1694724984 c:\users\f.freitas007\downloads\voronoi\voronoi\gl\freeglut.h
+1692904433 c:\users\10033421\desktop\voronoi\gl\freeglut.h
 	"freeglut_std.h"
 	"freeglut_ext.h"
 
-1694724985 c:\users\f.freitas007\downloads\voronoi\voronoi\gl\freeglut_std.h
+1692904433 c:\users\10033421\desktop\voronoi\gl\freeglut_std.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
-1694724984 c:\users\f.freitas007\downloads\voronoi\voronoi\gl\freeglut_ext.h
+1692904433 c:\users\10033421\desktop\voronoi\gl\freeglut_ext.h
 
-1694724983 c:\users\f.freitas007\downloads\voronoi\voronoi\ponto.h
+1692904432 c:\users\10033421\desktop\voronoi\ponto.h
 	<iostream>
 	<cmath>
 
-1694726098 source:c:\users\f.freitas007\downloads\voronoi\voronoi\exibevariospoligonos.cpp
+1692904432 source:c:\users\10033421\desktop\voronoi\exibeumpoligono.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<stdlib.h>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+
+1692904432 c:\users\10033421\desktop\voronoi\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1692904432 source:c:\users\10033421\desktop\voronoi\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1692904432 c:\users\10033421\desktop\voronoi\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1692904432 source:c:\users\10033421\desktop\voronoi\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1692904432 source:c:\users\10033421\desktop\voronoi\ponto.cpp
+	"Ponto.h"
+
+1692904432 source:c:\users\10033421\desktop\voronoi\temporizador.cpp
+	"Temporizador.h"
+
+1694726163 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\diagramavoronoi.cpp
+	"DiagramaVoronoi.h"
+
+1694726151 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\diagramavoronoi.h
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\gl\glut.h
+	"freeglut.h"
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\gl\freeglut_ext.h
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\ponto.h
+	<iostream>
+	<cmath>
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\exibeumpoligono.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<stdlib.h>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\ponto.cpp
+	"Ponto.h"
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\temporizador.cpp
+	"Temporizador.h"
+
+1694726209 source:c:\users\carolina ferreira\documents\pucrs\cg\t1\voronoi\exibevariospoligonos.cpp
 	<iostream>
 	<cmath>
 	<ctime>
@@ -137,37 +262,42 @@
 	"ListaDeCoresRGB.h"
 	"Temporizador.h"
 
-1694724983 c:\users\f.freitas007\downloads\voronoi\voronoi\listadecoresrgb.h
-	<iostream>
-	<cmath>
-	<ctime>
-	<fstream>
-	<windows.h>
-	<glut.h>
-	<sys/time.h>
-	<GLUT/glut.h>
-	<glut.h>
+1694726163 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\diagramavoronoi.cpp
+	"DiagramaVoronoi.h"
 
-1694724983 c:\users\f.freitas007\downloads\voronoi\voronoi\temporizador.h
-	<iostream>
-	<windows.h>
-	<sys/time.h>
-
-1694724984 source:c:\users\f.freitas007\downloads\voronoi\voronoi\listadecoresrgb.cpp
-	"ListaDeCoresRGB.h"
-
-1694724983 source:c:\users\f.freitas007\downloads\voronoi\voronoi\poligono.cpp
+1694726151 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\diagramavoronoi.h
 	<iostream>
 	<fstream>
 	"Poligono.h"
 
-1694726689 source:c:\users\f.freitas007\downloads\voronoi\voronoi\ponto.cpp
+1692904432 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
 	"Ponto.h"
+	<vector>
 
-1694724984 source:c:\users\f.freitas007\downloads\voronoi\voronoi\temporizador.cpp
-	"Temporizador.h"
+1692904433 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\gl\glut.h
+	"freeglut.h"
 
-1694726100 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\exibevariospoligonos.cpp
+1692904433 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\gl\freeglut_ext.h
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\ponto.h
+	<iostream>
+	<cmath>
+
+1694726209 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\exibevariospoligonos.cpp
 	<iostream>
 	<cmath>
 	<ctime>
@@ -184,39 +314,7 @@
 	"ListaDeCoresRGB.h"
 	"Temporizador.h"
 
-1298986600 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\gl\glut.h
-	"freeglut.h"
-
-1298986600 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\gl\freeglut.h
-	"freeglut_std.h"
-	"freeglut_ext.h"
-
-1298986600 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\gl\freeglut_std.h
-	<windows.h>
-	<GL/gl.h>
-	<GL/glu.h>
-
-1298986600 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\gl\freeglut_ext.h
-
-1694724984 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\ponto.h
-	<iostream>
-	<cmath>
-
-1694744863 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\poligono.h
-	<iostream>
-	<windows.h>
-	<glut.h>
-	<GLUT/glut.h>
-	<glut.h>
-	"Ponto.h"
-	<vector>
-
-1694726070 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\diagramavoronoi.h
-	<iostream>
-	<fstream>
-	"Poligono.h"
-
-1694724984 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\listadecoresrgb.h
+1692904432 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\listadecoresrgb.h
 	<iostream>
 	<cmath>
 	<ctime>
@@ -227,25 +325,22 @@
 	<GLUT/glut.h>
 	<glut.h>
 
-1694724984 c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\temporizador.h
+1692904432 c:\users\carolina ferreira\documents\pucrs\t1\voronoi\temporizador.h
 	<iostream>
 	<windows.h>
 	<sys/time.h>
 
-1694724986 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\listadecoresrgb.cpp
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\listadecoresrgb.cpp
 	"ListaDeCoresRGB.h"
 
-1694745039 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\poligono.cpp
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\poligono.cpp
 	<iostream>
 	<fstream>
 	"Poligono.h"
 
-1694740781 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\ponto.cpp
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\ponto.cpp
 	"Ponto.h"
 
-1694724986 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\temporizador.cpp
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\temporizador.cpp
 	"Temporizador.h"
-
-1694745832 source:c:\users\felip\desktop\log\github\engenhariasoftwarepucrs\computacao_grafica\trabalho01\voronoi\diagramavoronoi.cpp
-	"DiagramaVoronoi.h"
 

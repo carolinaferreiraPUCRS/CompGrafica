@@ -13,7 +13,7 @@ using namespace std;
 
 Poligono::Poligono()
 {
-    
+
 }
 
 void Poligono::insereVertice(Ponto p)
@@ -46,14 +46,14 @@ void Poligono::insereVizinho(Poligono *P, int pos)
     Vizinhos.insert(Vizinhos.begin()+pos, P);
 }
 
-Ponto Poligono::getVertice(int i)
-{
-    return Vertices[i];
-}
-
 Poligono* Poligono::getVizinho(int i)
 {
     return Vizinhos[i];
+}
+
+Ponto Poligono::getVertice(int i)
+{
+    return Vertices[i];
 }
 
 void Poligono::pintaPoligono()
@@ -96,7 +96,7 @@ unsigned long Poligono::getNVizinhos()
 void Poligono::obtemLimites(Ponto &Min, Ponto &Max)
 {
     Max = Min = Vertices[0];
-    
+
     for (int i=0; i<Vertices.size(); i++)
     {
         Min = ObtemMinimo (Vertices[i], Min);
@@ -120,7 +120,7 @@ void Poligono::LePoligono(const char *nome)
     string S;
     //int nLinha = 0;
     unsigned int qtdVertices;
-    
+
     input >> qtdVertices;  // arq << qtdVertices
 
     for (int i=0; i< qtdVertices; i++)
@@ -152,3 +152,4 @@ void Poligono::desenhaAresta(int n)
         glVertex3f(Vertices[n1].x,Vertices[n1].y,Vertices[n1].z);
     glEnd();
 }
+

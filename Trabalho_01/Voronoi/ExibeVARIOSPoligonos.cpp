@@ -213,14 +213,6 @@ void DesenhaLinha(Ponto P1, Ponto P2)
     glEnd();
 }
 // **********************************************************************
-void DesenhaPonto(Ponto P, int tamanho)
-{
-    glPointSize(tamanho);
-    glBegin(GL_POINTS);
-        glVertex3f(P.x,P.y,P.z);
-    glEnd();
-}
-// **********************************************************************
 void InterseptaArestas(Poligono P)
 {
     /*
@@ -282,7 +274,6 @@ void display( void )
         Esq = PontoClicado + Dir * (1000);
         glColor3f(0,1,0); // R, G, B  [0..1]
         DesenhaLinha(PontoClicado, Esq);
-        DesenhaPonto(PontoClicado, 3);
 
         glColor3f(1,0,0); // R, G, B  [0..1]
 
