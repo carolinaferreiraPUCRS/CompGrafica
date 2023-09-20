@@ -48,6 +48,8 @@ double AccumDeltaT=0;
 
 Poligono Pontos;
 
+Ponto andante;
+
 Voronoi Voro;
 int *CoresDosPoligonos;
 
@@ -120,6 +122,8 @@ void init()
     Min.imprime("Minimo:", "\n");
     Max.imprime("Maximo:", "\n");
     Voro.obtemVizinhosDasArestas();
+
+    andante = Ponto(0, 0, 0);
 
     CoresDosPoligonos = new int[Voro.getNPoligonos()];
 
@@ -213,6 +217,14 @@ void DesenhaLinha(Ponto P1, Ponto P2)
     glEnd();
 }
 // **********************************************************************
+void DesenhaPonto(Ponto P, int tamanho)
+{
+    glPointSize(tamanho);
+    glBegin(GL_POINTS);
+        glVertex3f(P.x, P.y, P.z);
+    glEnd();
+}
+// **********************************************************************
 void InterseptaArestas(Poligono P)
 {
     /*
@@ -282,6 +294,7 @@ void display( void )
     //Mapa.desenhaVertices();
     //glColor3f(1,0,0); // R, G, B  [0..1]
     //DesenhaLinha(Mapa.getVertice(0), Ponto(Min.x, Max.y));
+    DesenhaPonto(andante, 20);
 
     glutSwapBuffers();
 }
@@ -307,6 +320,29 @@ void ContaTempo(double tempo)
         }
     }
 }
+
+void movePoint(Ponto &p, int x, int y)
+{
+  p.set(p.x + x, p.y + y, p.z);
+
+}
+
+void movePoint(char key)
+{
+    switch(key) {
+        case 'w':
+            movePoint(andante, 0, 1);
+            break;
+        case 'a':
+            movePoint(andante, -1, 0);
+        case 's':
+            movePoint(andante, 0, -1);
+            break;
+        case 'd':
+            movePoint(andante, 1, 0);
+            break;
+    }
+}
 // **********************************************************************
 //  void keyboard ( unsigned char key, int x, int y )
 // **********************************************************************
@@ -317,6 +353,12 @@ void keyboard ( unsigned char key, int x, int y )
 		case 27:        // Termina o programa qdo
 			exit ( 0 );   // a tecla ESC for pressionada
 			break;
+        case 'w':
+        case 'a':
+        case 's':
+        case 'd':
+            movePoint(key);
+            break;
         case 't':
             ContaTempo(3);
             break;

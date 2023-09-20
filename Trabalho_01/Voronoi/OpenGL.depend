@@ -344,3 +344,85 @@
 1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\temporizador.cpp
 	"Temporizador.h"
 
+1694967753 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\diagramavoronoi.cpp
+	"DiagramaVoronoi.h"
+
+1694726151 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\diagramavoronoi.h
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1694968148 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\glut.h
+	"freeglut.h"
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\freeglut_ext.h
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\ponto.h
+	<iostream>
+	<cmath>
+
+1695158715 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\exibevariospoligonos.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<stdlib.h>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"DiagramaVoronoi.h"
+	"ListaDeCoresRGB.h"
+	"Temporizador.h"
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1692904432 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1694967923 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\ponto.cpp
+	"Ponto.h"
+
+1692904432 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\temporizador.cpp
+	"Temporizador.h"
+
