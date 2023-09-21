@@ -344,21 +344,23 @@
 1692904432 source:c:\users\carolina ferreira\documents\pucrs\t1\voronoi\temporizador.cpp
 	"Temporizador.h"
 
-1694967753 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\diagramavoronoi.cpp
+1695256081 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\diagramavoronoi.cpp
 	"DiagramaVoronoi.h"
+	"Envelope.h"
 
 1694726151 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\diagramavoronoi.h
 	<iostream>
 	<fstream>
 	"Poligono.h"
 
-1694968148 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.h
+1695256326 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.h
 	<iostream>
 	<windows.h>
 	<glut.h>
 	<GLUT/glut.h>
 	<glut.h>
 	"Ponto.h"
+	"Envelope.h"
 	<vector>
 
 1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\glut.h
@@ -379,7 +381,7 @@
 	<iostream>
 	<cmath>
 
-1695158715 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\exibevariospoligonos.cpp
+1695261326 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\exibevariospoligonos.cpp
 	<iostream>
 	<cmath>
 	<ctime>
@@ -393,6 +395,7 @@
 	"Ponto.h"
 	"Poligono.h"
 	"DiagramaVoronoi.h"
+	"Envelope.h"
 	"ListaDeCoresRGB.h"
 	"Temporizador.h"
 
@@ -412,10 +415,10 @@
 	<windows.h>
 	<sys/time.h>
 
-1692904432 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\listadecoresrgb.cpp
+1695252059 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\listadecoresrgb.cpp
 	"ListaDeCoresRGB.h"
 
-1694967923 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.cpp
+1695256348 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.cpp
 	<iostream>
 	<fstream>
 	"Poligono.h"
@@ -425,4 +428,15 @@
 
 1692904432 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\temporizador.cpp
 	"Temporizador.h"
+
+1695254364 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\envelope.cpp
+	"Envelope.h"
+
+1695254371 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\envelope.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
 

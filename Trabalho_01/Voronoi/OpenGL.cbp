@@ -61,12 +61,22 @@
 			<Add option="-Wno-narrowing" />
 			<Add option="-Wno-deprecated-declarations" />
 		</Compiler>
-		<Unit filename="DiagramaVoronoi.cpp" />
-		<Unit filename="DiagramaVoronoi.h" />
+		<Unit filename="DiagramaVoronoi.cpp">
+			<Option target="Debug-Windows" />
+		</Unit>
+		<Unit filename="Envelope.cpp" />
+		<Unit filename="Envelope.h" />
 		<Unit filename="ExibeVARIOSPoligonos.cpp" />
-		<Unit filename="ListaDeCoresRGB.cpp" />
+		<Unit filename="ListaDeCoresRGB.cpp">
+			<Option target="Debug-Windows" />
+		</Unit>
 		<Unit filename="ListaDeCoresRGB.h" />
-		<Unit filename="ListaDePoligonos-V2.txt" />
+		<Unit filename="ListaDePoligonos-V1.txt">
+			<Option target="Debug-Windows" />
+		</Unit>
+		<Unit filename="ListaDePoligonos-V2.txt">
+			<Option target="Debug-Windows" />
+		</Unit>
 		<Unit filename="Poligono.cpp" />
 		<Unit filename="Poligono.h" />
 		<Unit filename="Ponto.cpp" />

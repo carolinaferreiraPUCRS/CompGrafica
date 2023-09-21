@@ -26,6 +26,11 @@ void Poligono::insereVizinho(Poligono *P)
     Vizinhos.push_back(P);
 }
 
+void Poligono::insereEnvelope(Envelope e)
+{
+    Envelopes.push_back(e);
+}
+
 void Poligono::insereVertice(Ponto p, int pos)
 {
     if ((pos < 0) || (pos>Vertices.size()))
@@ -54,6 +59,22 @@ Poligono* Poligono::getVizinho(int i)
 Ponto Poligono::getVertice(int i)
 {
     return Vertices[i];
+}
+
+Envelope Poligono::getEnvelope(int i)
+{
+    return Envelopes[i];
+}
+
+bool Poligono::pontoEstaDentro(Ponto p)
+{
+    for(int i = 0; i < Envelopes.size(); i++) {
+        Envelope e = getEnvelope(i);
+        if(!e.pontoEstaDentro(p)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 void Poligono::pintaPoligono()

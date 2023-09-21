@@ -1,6 +1,6 @@
 // **********************************************************************
-// PUCRS/Escola PolitŽcnica
-// COMPUTA‚ÌO GRçFICA
+// PUCRS/Escola Politï¿½cnica
+// COMPUTAï¿½ï¿½O GRï¿½FICA
 //
 // Programa basico para criar aplicacoes 2D em OpenGL
 //
@@ -38,6 +38,7 @@ using namespace std;
 #include "Ponto.h"
 #include "Poligono.h"
 #include "DiagramaVoronoi.h"
+#include "Envelope.h"
 
 #include "ListaDeCoresRGB.h"
 
@@ -48,13 +49,13 @@ double AccumDeltaT=0;
 
 Poligono Pontos;
 
-Ponto andante;
-
 Voronoi Voro;
 int *CoresDosPoligonos;
 
 // Limites logicos da area de desenho
 Ponto Min, Max, PontoClicado;
+
+Ponto andante;
 
 bool desenha = false;
 bool FoiClicado = false;
@@ -121,17 +122,18 @@ void init()
     Voro.obtemLimites(Min,Max);
     Min.imprime("Minimo:", "\n");
     Max.imprime("Maximo:", "\n");
-    Voro.obtemVizinhosDasArestas();
 
     andante = Ponto(0, 0, 0);
+
+    Voro.obtemVizinhosDasArestas();
 
     CoresDosPoligonos = new int[Voro.getNPoligonos()];
 
     for (int i=0; i<Voro.getNPoligonos(); i++)
         CoresDosPoligonos[i] = i*2;//rand()%80;
 
-    // Ajusta a largura da janela l—gica
-    // em fun‹o do tamanho dos pol’gonos
+    // Ajusta a largura da janela lï¿½gica
+    // em funï¿½ï¿½o do tamanho dos polï¿½gonos
     Ponto Largura;
     Largura = Max - Min;
 
@@ -153,7 +155,7 @@ void animate()
     TempoTotal += dt;
     nFrames++;
 
-    if (AccumDeltaT > 1.0/30) // fixa a atualiza‹o da tela em 30
+    if (AccumDeltaT > 1.0/30) // fixa a atualizaï¿½ï¿½o da tela em 30
     {
         AccumDeltaT = 0;
         //angulo+=0.05;
@@ -221,7 +223,7 @@ void DesenhaPonto(Ponto P, int tamanho)
 {
     glPointSize(tamanho);
     glBegin(GL_POINTS);
-        glVertex3f(P.x, P.y, P.z);
+        glVertex3f(P.x,P.y,P.z);
     glEnd();
 }
 // **********************************************************************
@@ -246,7 +248,7 @@ void display( void )
 	// Limpa a tela coma cor de fundo
 	glClear(GL_COLOR_BUFFER_BIT);
 
-    // Define os limites l—gicos da area OpenGL dentro da Janela
+    // Define os limites lï¿½gicos da area OpenGL dentro da Janela
 	glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
@@ -286,22 +288,24 @@ void display( void )
         Esq = PontoClicado + Dir * (1000);
         glColor3f(0,1,0); // R, G, B  [0..1]
         DesenhaLinha(PontoClicado, Esq);
+        DesenhaPonto(PontoClicado, 3);
 
         glColor3f(1,0,0); // R, G, B  [0..1]
 
+
     }
 
+    DesenhaPonto(andante, 10);
     //Mapa.desenhaVertices();
     //glColor3f(1,0,0); // R, G, B  [0..1]
     //DesenhaLinha(Mapa.getVertice(0), Ponto(Min.x, Max.y));
-    DesenhaPonto(andante, 20);
 
     glutSwapBuffers();
 }
 // **********************************************************************
 // ContaTempo(double tempo)
-//      conta um certo nœmero de segundos e informa quanto frames
-// se passaram neste per’odo.
+//      conta um certo nï¿½mero de segundos e informa quanto frames
+// se passaram neste perï¿½odo.
 // **********************************************************************
 void ContaTempo(double tempo)
 {
@@ -321,25 +325,80 @@ void ContaTempo(double tempo)
     }
 }
 
-void movePoint(Ponto &p, int x, int y)
-{
-  p.set(p.x + x, p.y + y, p.z);
-
+bool pontoNoPoligono(Ponto &pt, Poligono &p) {
+    Ponto pontoMenor, pontoMaior;
+    p.obtemLimites(pontoMenor, pontoMaior);
+    Envelope envelope = Envelope(pontoMenor, pontoMaior);
+    return envelope.pontoEstaDentro(pt);
+  //  if (pt.x > pontoMenor.x && pt.x < pontoMaior.x) {
+  //      if (pt.y > pontoMenor.y && pt.y < pontoMaior.y) {
+  //          return true;
+  //      }
+  //  }
+   // return false;
 }
 
-void movePoint(char key)
-{
-    switch(key) {
+void checkPointPosition(Ponto &p, float x, float y) {
+    if (p.x > Max.x)
+        p.x = Min.x;
+    else if (p.x < Min.x)
+        p.x = Max.x;
+
+    if (p.y > Max.y)
+        p.y = Min.y;
+    else if (p.y < Min.y) {
+          p.y = Max.y;
+    }
+        glutPostRedisplay();
+        Ponto P1, P2;
+        Poligono P;
+        Ponto Esq;
+        Ponto Dir (-1,0);
+        Esq = PontoClicado + Dir * (1000);
+        for (int i=0; i<Voro.getNPoligonos(); i++)
+        {
+            P = Voro.getPoligono(i);
+            for (int j=0; j<P.getNVertices();j++)
+            {
+                P.getAresta(j, P1, P2);
+
+                if (HaInterseccao(PontoClicado,Esq, P1, P2)) {
+                     cout << "\nAchei: " << j;
+                     P.desenhaAresta(j);
+                }
+
+            }
+        }
+        glutPostRedisplay();
+}
+
+void movePointVertical(Ponto &p, float distance) {
+    p.y += distance;
+    checkPointPosition(p, 0, distance);
+}
+
+void movePointHorizontal(Ponto &p, float distance) {
+    p.x += distance;
+    checkPointPosition(p, distance, 0);
+}
+
+void movePoint(char key) {
+    switch (key) {
         case 'w':
-            movePoint(andante, 0, 1);
+            cout << "Clicou w";
+            movePointVertical(andante, 0.1);
             break;
         case 'a':
-            movePoint(andante, -1, 0);
+            cout << "Clicou a";
+            movePointHorizontal(andante, -0.1);
+            break;
         case 's':
-            movePoint(andante, 0, -1);
+            cout << "Clicou s";
+            movePointVertical(andante, -0.1);
             break;
         case 'd':
-            movePoint(andante, 1, 0);
+            cout << "Clicou w";
+            movePointHorizontal(andante, 0.1);
             break;
     }
 }
@@ -368,6 +427,8 @@ void keyboard ( unsigned char key, int x, int y )
 		default:
 			break;
 	}
+
+	glutPostRedisplay();
 }
 // **********************************************************************
 //  void arrow_keys ( int a_keys, int x, int y )
@@ -389,10 +450,10 @@ void arrow_keys ( int a_keys, int x, int y )
 	}
 }
 // **********************************************************************
-// Esta fun‹o captura o clique do botao direito do mouse sobre a ‡rea de
-// desenho e converte a coordenada para o sistema de referncia definido
-// na glOrtho (ver fun‹o reshape)
-// Este c—digo Ž baseado em http://hamala.se/forums/viewtopic.php?t=20
+// Esta funï¿½ï¿½o captura o clique do botao direito do mouse sobre a ï¿½rea de
+// desenho e converte a coordenada para o sistema de referï¿½ncia definido
+// na glOrtho (ver funï¿½ï¿½o reshape)
+// Este cï¿½digo ï¿½ baseado em http://hamala.se/forums/viewtopic.php?t=20
 // **********************************************************************
 void Mouse(int button,int state,int x,int y)
 {
@@ -439,38 +500,38 @@ int  main ( int argc, char** argv )
     // que aparecera na barra de titulo da janela.
     glutCreateWindow    ( "Poligonos em OpenGL" );
 
-    // executa algumas inicializações
+    // executa algumas inicializaï¿½ï¿½es
     init ();
 
     // Define que o tratador de evento para
     // o redesenho da tela. A funcao "display"
-    // será chamada automaticamente quando
-    // for necessário redesenhar a janela
+    // serï¿½ chamada automaticamente quando
+    // for necessï¿½rio redesenhar a janela
     glutDisplayFunc ( display );
 
     // Define que o tratador de evento para
-    // o invalida‹o da tela. A funcao "display"
-    // será chamada automaticamente sempre que a
-    // m‡quina estiver ociosa (idle)
+    // o invalidaï¿½ï¿½o da tela. A funcao "display"
+    // serï¿½ chamada automaticamente sempre que a
+    // mï¿½quina estiver ociosa (idle)
     glutIdleFunc(animate);
 
     // Define que o tratador de evento para
     // o redimensionamento da janela. A funcao "reshape"
-    // será chamada automaticamente quando
-    // o usuário alterar o tamanho da janela
+    // serï¿½ chamada automaticamente quando
+    // o usuï¿½rio alterar o tamanho da janela
     glutReshapeFunc ( reshape );
 
     // Define que o tratador de evento para
     // as teclas. A funcao "keyboard"
-    // será chamada automaticamente sempre
-    // o usuário pressionar uma tecla comum
+    // serï¿½ chamada automaticamente sempre
+    // o usuï¿½rio pressionar uma tecla comum
     glutKeyboardFunc ( keyboard );
 
     // Define que o tratador de evento para
     // as teclas especiais(F1, F2,... ALT-A,
     // ALT-B, Teclas de Seta, ...).
-    // A funcao "arrow_keys" será chamada
-    // automaticamente sempre o usuário
+    // A funcao "arrow_keys" serï¿½ chamada
+    // automaticamente sempre o usuï¿½rio
     // pressionar uma tecla especial
     glutSpecialFunc ( arrow_keys );
 

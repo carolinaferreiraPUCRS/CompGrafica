@@ -7,6 +7,7 @@
 //
 
 #include "DiagramaVoronoi.h"
+#include "Envelope.h"
 
 ifstream input;            // ofstream arq;
 
@@ -94,12 +95,14 @@ void Voronoi::obtemVizinhosDasArestas()
         for (int j = 0; j < p1.getNVertices(); j++) {
             Ponto p1a = p1.getVertice(j);
             Ponto p1b = p1.getVertice((j + 1) % p1.getNVertices());
-
+            Envelope e = Envelope(p1a, p1b);
+            p1.insereEnvelope(e);
             cout << "Aresta " << j << " de " << i << endl;
 
             for (int k = 0; k < p2.getNVertices(); k++) {
                 Ponto p2a = p2.getVertice(k);
                 Ponto p2b = p2.getVertice((k + 1) % p2.getNVertices());
+
                 if (p1a == p2b && p1b == p2a) {
                     p1.insereVizinho(&p2);
                     p2.insereVizinho(&p1);

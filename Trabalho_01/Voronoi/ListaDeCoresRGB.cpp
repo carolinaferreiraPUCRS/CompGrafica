@@ -105,4 +105,3 @@ void defineCor(int c)
     glColor3f(Cores[c][0], Cores[c][1], Cores[c][2]);
 }
 
-						
