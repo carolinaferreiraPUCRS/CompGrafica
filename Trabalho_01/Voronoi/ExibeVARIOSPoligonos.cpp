@@ -90,6 +90,26 @@ void ImprimeNumeracaoDosVertices(Poligono &P)
         printString(msg, aux.x, aux.y);
     }
 }
+
+void ImprimeNroDoPoloigono(Poligono P, int n)
+{
+    char msg[10];
+
+    sprintf(msg, "%d", n);
+
+    Ponto Soma, A;
+    for (int i = 0; i < P.getNVertices(); i++)
+    {
+        A = P.getVertice(i);
+        Soma = Soma + A;
+    }
+
+    double div = 1.0 / P.getNVertices();
+
+    Soma = Soma * div;
+
+    printString(msg, Soma.x, Soma.y);
+}
 // **********************************************************************
 //
 // **********************************************************************
@@ -273,6 +293,7 @@ void display(void)
     {
         P = Voro.getPoligono(i);
         P.desenhaPoligono();
+        ImprimeNroDoPoloigono(P, i);
     }
 
     if (desenha)
@@ -364,22 +385,38 @@ void checkPointPosition(Ponto &p, float x, float y)
     }
     glutPostRedisplay();
     Ponto P1, P2;
-    Poligono P;
+    Poligono P;\
     Ponto Esq;
     Ponto Dir(-1, 0);
     Esq = p + Dir * (1000);
     DesenhaLinha(Esq, p);
+
+    cout << "===================================" << endl;
     for (int i = 0; i < Voro.getNPoligonos(); i++)
     {
         P = Voro.getPoligono(i);
+        int nroInterseccoes = 0;
         for (int j = 0; j < P.getNVertices(); j++)
         {
             P.getAresta(j, P1, P2);
 
             if (HaInterseccao(p, Esq, P1, P2))
             {
-                cout << "\nAchei: " << j;
+                nroInterseccoes++;
                 P.desenhaAresta(j);
+            }
+
+            if (nroInterseccoes > 0)
+            {
+                cout << "\nAnalisando novo poligono" << i << "=" << nroInterseccoes << endl;
+                if (nroInterseccoes % 2 == 1)
+                {
+                    cout << "Ponto dentro do poligono" << endl;
+                }
+                else
+                {
+                    cout << "Ponto fora do poligono" << endl;
+                }
             }
         }
     }
@@ -403,19 +440,15 @@ void movePoint(char key)
     switch (key)
     {
     case 'w':
-        cout << "Clicou w";
         movePointVertical(andante, 0.1);
         break;
     case 'a':
-        cout << "Clicou a";
         movePointHorizontal(andante, -0.1);
         break;
     case 's':
-        cout << "Clicou s";
         movePointVertical(andante, -0.1);
         break;
     case 'd':
-        cout << "Clicou w";
         movePointHorizontal(andante, 0.1);
         break;
     }

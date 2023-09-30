@@ -353,7 +353,7 @@
 	<fstream>
 	"Poligono.h"
 
-1695256326 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.h
+1695421205 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.h
 	<iostream>
 	<windows.h>
 	<glut.h>
@@ -377,11 +377,11 @@
 
 1692904433 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\gl\freeglut_ext.h
 
-1692904432 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\ponto.h
+1695423226 c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\ponto.h
 	<iostream>
 	<cmath>
 
-1695333251 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\exibevariospoligonos.cpp
+1695941341 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\exibevariospoligonos.cpp
 	<iostream>
 	<cmath>
 	<ctime>
@@ -418,7 +418,7 @@
 1695252059 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\listadecoresrgb.cpp
 	"ListaDeCoresRGB.h"
 
-1695256348 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.cpp
+1695422246 source:c:\users\carolina ferreira\documents\pucrs\compgrafica\trabalho_01\voronoi\poligono.cpp
 	<iostream>
 	<fstream>
 	"Poligono.h"
