@@ -56,6 +56,9 @@ int ModoDeExibicao = 1;
 double nFrames=0;
 double TempoTotal=0;
 Ponto CantoEsquerdo(-20,-1,-10);
+Ponto PosicaoObservador;
+Ponto PosicaoAlvo;
+Ponto VetorObservadorAlvo;
 // **********************************************************************
 //  void init(void)
 //        Inicializa os parametros globais de OpenGL
@@ -78,7 +81,9 @@ void init(void)
     else
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-    
+    PosicaoObservador = Ponto(0, 0, 0);
+    PosicaoAlvo = Ponto(0, 0, 0);
+    VetorObservadorAlvo = PosicaoAlvo - PosicaoObservador;
 }
 
 // **********************************************************************
@@ -100,9 +105,9 @@ void animate()
     }
     if (TempoTotal > 5.0)
     {
-        cout << "Tempo Acumulado: "  << TempoTotal << " segundos. " ;
-        cout << "Nros de Frames sem desenho: " << nFrames << endl;
-        cout << "FPS(sem desenho): " << nFrames/TempoTotal << endl;
+        // cout << "Tempo Acumulado: "  << TempoTotal << " segundos. " ;
+        // cout << "Nros de Frames sem desenho: " << nFrames << endl;
+        // cout << "FPS(sem desenho): " << nFrames/TempoTotal << endl;
         TempoTotal = 0;
         nFrames = 0;
     }
@@ -172,7 +177,7 @@ void DesenhaParalelepipedo()
 // **********************************************************************
 void DesenhaLadrilho(int corBorda, int corDentro)
 {
-    //defineCor(corDentro);// desenha QUAD preenchido
+    defineCor(corDentro);// desenha QUAD preenchido
     glColor3f(1,1,1);
     glBegin ( GL_QUADS );
         glNormal3f(0,1,0);
@@ -182,7 +187,7 @@ void DesenhaLadrilho(int corBorda, int corDentro)
         glVertex3f( 0.5f,  0.0f, -0.5f);
     glEnd();
 
-    //defineCor(corBorda);
+    defineCor(corBorda);
     glColor3f(0,1,0);
 
     glBegin ( GL_LINE_STRIP );
@@ -200,7 +205,7 @@ void DesenhaLadrilho(int corBorda, int corDentro)
 //
 //
 // **********************************************************************
-void DesenhaPiso()
+void DesenhaPiso() //parei aqui
 {
     srand(100); // usa uma semente fixa para gerar sempre as mesma cores no piso
     glPushMatrix();
@@ -216,6 +221,24 @@ void DesenhaPiso()
         glPopMatrix();
         glTranslated(1, 0, 0);
     }
+    glPopMatrix();
+}
+
+void DesenhaParedao() {
+    glPushMatrix();
+        glRotatef(90, 0, 0, 1);
+        DesenhaPiso();
+    glPopMatrix();
+}
+
+void DesenhaChao() {
+    glPushMatrix();
+        glTranslated(-20, 0, 0);
+        DesenhaPiso();
+    glPopMatrix();
+    glPushMatrix();
+        glTranslated(20, 0, 0);
+        DesenhaPiso();
     glPopMatrix();
 }
 // **********************************************************************
@@ -295,7 +318,12 @@ void PosicUser()
     glLoadIdentity();
     gluLookAt(0, 0, 10,   // Posi��o do Observador
               0,0,0,     // Posi��o do Alvo
-              0.0f,1.0f,0.0f);
+              0.0f,1.0f,0.0f); 
+    /*
+    gluLookAt(PosicaoObservador.x, PosicaoObservador.y, PosicaoObservador.z,   // Posi��o do Observador
+              PosicaoAlvo.x, PosicaoAlvo.y, PosicaoAlvo.z, // Posi��o do Alvo
+              0.0f, 1.0f, 0.0f);
+    */
 
 }
 // **********************************************************************
