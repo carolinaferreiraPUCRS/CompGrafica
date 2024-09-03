@@ -1,0 +1,821 @@
+# depslib dependency file v1.0
+1629159292 source:d:\pinho\basico2d\programabasicoopengl.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+	"ListaDeCoresRGB.h"
+
+1298986600 d:\pinho\basico2d\gl\glut.h
+	"freeglut.h"
+
+1298986600 d:\pinho\basico2d\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1298986600 d:\pinho\basico2d\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1298986600 d:\pinho\basico2d\gl\freeglut_ext.h
+
+1629314366 d:\pinho\basico2d\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1629314366 source:d:\pinho\basico2d\temporizador.cpp
+	"Temporizador.h"
+
+1597787603 source:d:\pinho\poligonos\exibepoligonos.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+
+1298986600 d:\pinho\poligonos\gl\glut.h
+	"freeglut.h"
+
+1298986600 d:\pinho\poligonos\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1298986600 d:\pinho\poligonos\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1298986600 d:\pinho\poligonos\gl\freeglut_ext.h
+
+1597783594 d:\pinho\poligonos\ponto.h
+	<iostream>
+
+1597787214 d:\pinho\poligonos\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1584988812 d:\pinho\poligonos\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1597787245 source:d:\pinho\poligonos\poligono.cpp
+	"Poligono.h"
+
+1597784052 source:d:\pinho\poligonos\ponto.cpp
+	"Ponto.h"
+
+1584988348 source:d:\pinho\poligonos\temporizador.cpp
+	"Temporizador.h"
+
+1621520030 source:d:\pinho\basico2d\basico2d\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1621514488 d:\pinho\basico2d\basico2d\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1298986600 d:\pinho\basico2d\basico2d\gl\glut.h
+	"freeglut.h"
+
+1298986600 d:\pinho\basico2d\basico2d\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1298986600 d:\pinho\basico2d\basico2d\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1298986600 d:\pinho\basico2d\basico2d\gl\freeglut_ext.h
+
+1621479118 source:d:\pinho\basico2d\basico2d\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1621479098 d:\pinho\basico2d\basico2d\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1629143624 d:\pinho\basico2d\basico2d\ponto.h
+	<iostream>
+
+1619656962 source:d:\pinho\basico2d\basico2d\ponto.cpp
+	"Ponto.h"
+
+1629145130 source:d:\pinho\basico2d\basico2d\programabasicoopengl.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+	"ListaDeCoresRGB.h"
+
+1584988812 d:\pinho\basico2d\basico2d\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1584988348 source:d:\pinho\basico2d\basico2d\temporizador.cpp
+	"Temporizador.h"
+
+1621520030 source:d:\pinho\basico2d\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1621514488 d:\pinho\basico2d\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1621479118 source:d:\pinho\basico2d\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1621479098 d:\pinho\basico2d\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1629228860 d:\pinho\basico2d\ponto.h
+	<iostream>
+
+1619656962 source:d:\pinho\basico2d\ponto.cpp
+	"Ponto.h"
+
+1629318962 source:d:\pinho\basico2d\interseccaoentretodasaslinhas.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Linha.h"
+	"Temporizador.h"
+
+1629318978 d:\pinho\basico2d\linha.h
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+
+1629228460 source:d:\pinho\basico2d\linha.cpp
+	<cstdlib>
+	"Linha.h"
+
+1654607283 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\linha.cpp
+	<cstdlib>
+	"Linha.h"
+
+1654607283 c:\users\10033421\desktop\opengl-codeblocks-xcode\linha.h
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\gl\glut.h
+	"freeglut.h"
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\gl\freeglut_ext.h
+
+1654607283 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1654607283 c:\users\10033421\desktop\opengl-codeblocks-xcode\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1654607284 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\ponto.h
+	<iostream>
+	<cmath>
+
+1654607284 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\ponto.cpp
+	"Ponto.h"
+
+1654607284 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\temporizador.cpp
+	"Temporizador.h"
+
+1654607284 c:\users\10033421\desktop\opengl-codeblocks-xcode\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1648677246 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\interseccaoentretodasaslinhas.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Linha.h"
+	"Temporizador.h"
+
+1654607283 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\exibepoligonos.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	"Poligono.h"
+	"Temporizador.h"
+
+1654607568 source:c:\users\10033421\desktop\opengl-codeblocks-xcode\programabasico3d.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Temporizador.h"
+	"ListaDeCoresRGB.h"
+	"Ponto.h"
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\imageclass.cpp
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	"ImageClass.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\gl\glut.h
+	"freeglut.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\gl\freeglut_ext.h
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\imageclass.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"SOIL/SOIL.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\soil.h
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\linha.cpp
+	<cstdlib>
+	"Linha.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\linha.h
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\ponto.h
+	<iostream>
+	<cmath>
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\ponto.cpp
+	"Ponto.h"
+
+1701359365 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\programabasico3d.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"SOIL/SOIL.h"
+	"ImageClass.h"
+	"Temporizador.h"
+	"Objeto3D.h"
+	"ListaDeCoresRGB.h"
+	"Ponto.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\image_dxt.cpp
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\image_dxt.h
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\image_helper.cpp
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\image_helper.h
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\soil.cpp
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+	<iostream>
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\stb_image_aug.h
+	<stdio.h>
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\stb_image_aug.cpp
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\stbi_dds_aug.h
+
+1701307953 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\soil\stbi_dds_aug_c.h
+
+1701307953 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\temporizador.cpp
+	"Temporizador.h"
+
+1701316423 source:c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\objeto3d.cpp
+	<cstdlib>
+	"Objeto3D.h"
+	"Ponto.h"
+
+1701322234 c:\users\carolina ferreira\documents\carolina\pucrs\meurepo\trabalho02\objeto3d.h
+	<iostream>
+	<fstream>
+	<glut.h>
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\imageclass.cpp
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	"ImageClass.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\gl\glut.h
+	"freeglut.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1701372097 c:\users\usuário\downloads\trabalho02\gl\freeglut_ext.h
+
+1701372097 c:\users\usuário\downloads\trabalho02\imageclass.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"SOIL/SOIL.h"
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\soil.h
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\linha.cpp
+	<cstdlib>
+	"Linha.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\linha.h
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\objeto3d.cpp
+	<cstdlib>
+	"Objeto3D.h"
+	"Ponto.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\objeto3d.h
+	<iostream>
+	<fstream>
+	<glut.h>
+
+1701372097 c:\users\usuário\downloads\trabalho02\ponto.h
+	<iostream>
+	<cmath>
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\ponto.cpp
+	"Ponto.h"
+
+1701373086 source:c:\users\usuário\downloads\trabalho02\programabasico3d.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Temporizador.h"
+	"ListaDeCoresRGB.h"
+	"Ponto.h"
+	"ImageClass.h"
+	"SOIL/SOIL.h"
+	"Objeto3D.h"
+
+1701372097 c:\users\usuário\downloads\trabalho02\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1701372098 source:c:\users\usuário\downloads\trabalho02\soil\image_dxt.cpp
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\image_dxt.h
+
+1701372098 source:c:\users\usuário\downloads\trabalho02\soil\image_helper.cpp
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\image_helper.h
+
+1701372098 source:c:\users\usuário\downloads\trabalho02\soil\soil.cpp
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+	<iostream>
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\stb_image_aug.h
+	<stdio.h>
+
+1701372098 source:c:\users\usuário\downloads\trabalho02\soil\stb_image_aug.cpp
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\stbi_dds_aug.h
+
+1701372098 c:\users\usuário\downloads\trabalho02\soil\stbi_dds_aug_c.h
+
+1701372097 source:c:\users\usuário\downloads\trabalho02\temporizador.cpp
+	"Temporizador.h"
+
+1701692325 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\imageclass.cpp
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	"ImageClass.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\gl\glut.h
+	"freeglut.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\gl\freeglut_ext.h
+
+1701692325 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\imageclass.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<windows.h>
+	"gl\glut.h"
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"SOIL/SOIL.h"
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\soil.h
+
+1701692325 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\linha.cpp
+	<cstdlib>
+	"Linha.h"
+
+1701692325 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\linha.h
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\listadecoresrgb.cpp
+	"ListaDeCoresRGB.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\listadecoresrgb.h
+	<iostream>
+	<cmath>
+	<ctime>
+	<fstream>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\objeto3d.cpp
+	<cstdlib>
+	"Objeto3D.h"
+	"Ponto.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\objeto3d.h
+	<iostream>
+	<fstream>
+	<glut.h>
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\ponto.h
+	<iostream>
+	<cmath>
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\poligono.cpp
+	<iostream>
+	<fstream>
+	"Poligono.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\poligono.h
+	<iostream>
+	<windows.h>
+	<glut.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Ponto.h"
+	<vector>
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\ponto.cpp
+	"Ponto.h"
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\programabasico3d.cpp
+	<iostream>
+	<cmath>
+	<ctime>
+	<windows.h>
+	<glut.h>
+	<sys/time.h>
+	<GLUT/glut.h>
+	<glut.h>
+	"Temporizador.h"
+	"ListaDeCoresRGB.h"
+	"Ponto.h"
+	"ImageClass.h"
+	"SOIL/SOIL.h"
+	"Objeto3D.h"
+
+1701692326 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\temporizador.h
+	<iostream>
+	<windows.h>
+	<sys/time.h>
+
+1701692327 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\image_dxt.cpp
+	"image_DXT.h"
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\image_dxt.h
+
+1701692327 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\image_helper.cpp
+	"image_helper.h"
+	<stdlib.h>
+	<math.h>
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\image_helper.h
+
+1701692327 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\soil.cpp
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<Carbon/Carbon.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	"SOIL.h"
+	"stb_image_aug.h"
+	"image_helper.h"
+	"image_DXT.h"
+	<stdlib.h>
+	<string.h>
+	<iostream>
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\stb_image_aug.h
+	<stdio.h>
+
+1701692327 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\stb_image_aug.cpp
+	"stb_image_aug.h"
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<assert.h>
+	<stdarg.h>
+	"stbi_DDS_aug.h"
+	"stbi_DDS_aug_c.h"
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\stbi_dds_aug.h
+
+1701692327 c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\soil\stbi_dds_aug_c.h
+
+1701692326 source:c:\users\carolina ferreira\documents\carolina\pucrs\compgrafica\trabalho2 - carolina ferreira\trabalho02\temporizador.cpp
+	"Temporizador.h"
+
